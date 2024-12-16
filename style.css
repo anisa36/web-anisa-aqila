@@ -1,0 +1,94 @@
+/* css/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e4a859; /* Biru muda lembut */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: rgb(236, 236, 236);
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+}
+
+nav a {
+    color: #FFD700; /* Warna emas untuk teks menu */
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #777;
+    color: #ffffff; /* Warna putih saat di-hover */
+}
+
+/* Menambahkan warna khusus untuk halaman yang sedang aktif */
+nav a.active {
+    background-color: #f1b715; /* Warna emas untuk menu aktif */
+    color: #333; /* Warna gelap untuk teks */
+}
+
+.container {
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+/* Gaya untuk gambar testimoni */
+.content img {
+    border: 3px solid #ddf031; /* Bingkai abu-abu */
+    border-radius: 10px; /* Membulatkan sudut */
+    margin: 10px; /* Spasi antar gambar */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+.testimonial {
+    background-color: #fafaf8;
+    border-left: 5px solid #3498db;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: #444;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+}
